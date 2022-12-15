@@ -34,3 +34,39 @@
     </div>
 </div>
 <button id="right"> > </button>
+<script>
+    window.onload= function (event){
+        let counter=1;
+        function showSlide(index) {
+            var slideshow=document.getElementById('slideshow');
+            slideshow.querySelectorAll('.slideshow_items').forEach(function (item){
+                item.style.display='none';
+            })
+            let fadeout_effect=setInterval(function (input) {
+
+            } , 10)
+            slideshow.querySelector('.slideshow_items:nth-child('+index + ')').style.display='block';
+
+        }
+        showSlide(counter);
+
+        document.getElementById('left').onclick= function (event){
+            counter--;
+            if(counter===0){
+                counter=3;
+            }
+
+            showSlide(counter);
+        }
+
+
+        document.getElementById('right').onclick= function (event){
+            counter++;
+            if (counter > 3){
+                counter = 1;
+            }
+
+            showSlide(counter);
+        }
+    }
+</script>
