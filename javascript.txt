@@ -20,3 +20,17 @@
         }
     </style>
 </head>
+<body>
+<button id="left"> < </button>
+<div id="slideshow">
+    <div class="slideshow_items" style="background-color: darkmagenta ">
+        slide1
+    </div>
+    <div class="slideshow_items" style="background-color: indianred">
+        slide2
+    </div>
+    <div class="slideshow_items" style="background-color: mediumaquamarine">
+        slide3
+    </div>
+</div>
+<button id="right"> > </button>
